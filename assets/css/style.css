@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+  transition: all .3s ease-in-out;
+  color: #fff;
+}
+
+#radial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  background-color: #424242;
+  border-radius: 100%;
+  filter: blur(15vw);
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+}
+
+.dark #radial {
+  background-color: transparent;
+}
+
+.dark {
+  color: #fff;
+  background-color: #000;
+}
+
+.dark label span:nth-child(1),
+.dark label span:nth-child(2),
+.dark label span:nth-child(3) {
+  background-color: #fff;
+}
+
+.red {
+  color: #dc143c;
+}
+
+.yellow {
+  color: #ffe600;
+}
+
+.blue {
+  color: #9fffea;
+}
+
+.orange {
+  color: #ff9028;
+}
+
+i {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+body {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#music{
+  position: absolute;
+  left: -80px;
+  bottom: -50px;
+}#music1{
+  position: absolute;
+  right: -250px;
+  bottom: 150px;
+}
+
+h1 {
+  text-align: center;
+}
+
+audio {
+  width: 100%;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #00ff48;
+  border-radius: 2px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+}
+
+textarea:focus, input:focus, select:focus {
+  outline: none;
+}
+
+
+input[type="submit"] {
+  margin-top: 30px;
+  background-color: #00ff48;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.none {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 4vw;
+}
+
+button {
+  width: 50%;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid #00ff48;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.hidden {
+  display: none;
+}
+
+#points {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+#rank {
+  display: flex;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#themeToggle {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 50vw;
+  padding: 10vw;
+  gap: 2vh;
+  align-items: center;
+}
+
+#music {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  gap: 30px;
+}
+
+#musicPhoto {
+  overflow: hidden;
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  background-color: #424242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#musicPhoto #photo {
+  border-radius: 100%;
+  width: 390px;
+  z-index: 1;
+}
+
+#progressbar {
+  background-color: #424242;
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+#progress {
+  height: 100%;
+  width: 5%;
+  background-color: #00ff48;
+}
+
+i#pauseButton {
+  background-color: #00ff48;
+  color: #1a1a1a;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+#play-music{
+  border: none;
+  padding: 0;
+  align-items: center;
+  width: auto;
+}
+
+.waves{
+  display: flex;
+  width: 350px;
+  gap: 20px;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 80%;
+  width: 40px;
+  border-radius: 100px;
+  background-color: #00ff85;
+  animation: lanone 1s infinite;
+}
+
+.box:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.box:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.box:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.box:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.box:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+.box:nth-child(6) {
+  animation-delay: 0.3s;
+}
+
+.box:nth-child(7) {
+  animation-delay: 0s;
+}
+
+@keyframes lanone {
+  50%{
+      height: 20%;
+  }
+
+  0%,100%{
+      height: 80%;
+  }
+}
+
+.paused {
+  animation-play-state: paused;
+}
